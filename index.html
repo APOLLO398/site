@@ -1,54 +1,91 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-<head>
-<title></title>
-<link rel="stylesheet" type="text/css" href="">
-<meta charset="utf-8">
-<script src="jquery.js"></script>
-<script>
-$(document).ready(function(){
-alert("teste");
-});
-</script>
-<style>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="">
+        <meta charset="utf-8">
+        <script src="jquery.js"></script>
+        <script>
+           //funcao para adicionar
+           //valor no campo texto
+            function adicionar(valor){
+                document .getElementById('visor') .value += valor;
 
-</style>
-</head>
-<body>
+            }
+        </script>
+        <style>
+           .botao{
+            width: 6%;
+            height 3%;
+            background-color: rgb(154, 226, 255) ;
+            color:white ;
 
-<fieldset>
-<legend>CALCULADORA</legend>
-<input type="text" id="text">
-</br></br>
-<button id="btn_um" onclick="adicionar('1')">1</button>
-<button id="btn_dois" onclick="adicionar('')">2</button>
-<button id="btn_tres" onclick="adicionar('')">3</button>
-<button id="btn_adicao"onclick="adicionar('')">+</button>
-<button id="btn_porcentagem"onclick="adicionar('')">%</button>
-</br></br>
-</br></br>
-<button id="btn_quatro"onclick="adicionar('')">4</button>
-<button id="btn_cinco"onclick="adicionar('')">5</button>
-<button id="btn_seis"onclick="adicionar('')">6</button>
-<button id="btn_subtracao"onclick=adicionar"('')">-</button>
-<button id="btn_potencia"onclick="adicionar('')">^</button>
-</br></br>
-<button id="btn_sete"onclick="adicionar('')">7</button>
-<button id="btn_oito"onclick="adicionar('')">8</button>
-<button id="btn_nove"onclick="adicionar('')">9</button>
-<button id="btn_divisao"onclick="adicionar('')">/</button>
-<button id="btn_pa">(</button>
-</br></br>
-<button id="btn_ponto"onclick="adicionar('.')>.</button>
-<button id="btn_zero"onclick="adicionar('0')>0</button>
-<button id="btn_virgula"onclick="adicionar(',')>,</button>
-<button id="btn_multiplicacao"onclick="adicionar('*')">x</button>
-<button id="btn_pf" onclick= adicionar('')">)</button>
+           }
+           .botaoo{
+            width: 6%;
+            height 3%;
+            background-color: blue ;
+            color:white ;
 
-</br></br>
-<button id="btn_limpar">C</button>
-<button id="btn_igual">=</button>
-</fieldset>
 
-</body>
-</html>
+
+           }
+           .botal{
+            width: 6%;
+            height 3%;
+            background-color: black;
+            color: white;
+
+
+
+           }
+           botac{
+            width: 6%;
+            height 3%;
+            background-color: rgb(94, 94, 94);
+            color: white;
+
+           }
+
+
+
+
+            
+         </style>
+    </head>
+    <body>
+                    <fieldset>
+                        <legend>CALCULADORA</legend>
+                            <input type="text" id="visor">
+                            </br></br>
+                            <button id="btn_um" onclick="adicionar('1')" class="botão">1</button>
+                            <button id="btn_dois" onclick="adicionar('2')"class="botão">2</button>
+                            <button id="btn_tres" onclick="adicionar('3')"class="botão">3</button>
+                            <button id="btn_adicao" onclick="adicionar('+')"class="botão">+</button>
+                            <button id="btn_porcentagem" onclick="adicionar('%')"class="botãoo">%</button>
+                            </br></br>
+                            </br></br>
+                            <button id="btn_quatro" onclick="adicionar('4')"class="botão">4</button>
+                            <button id="btn_cinco" onclick="adicionar('5')"class="botão">5</button>
+                            <button id="btn_seis" onclick="adicionar('6')"class="botão">6</button>
+                            <button id="btn_subtracao" onclick="adicionar('-')"class="botão">-</button>
+                            <button id="btn_potencia" onclick="adicionar('^')"class="botão">^</button>
+                            </br></br>
+                            <button id="btn_sete" onclick="adicionar('7')"class="botão">7</button>
+                            <button id="btn_oito" onclick="adicionar('8')"class="botão">8</button>
+                            <button id="btn_nove" onclick="adicionar('9')"class="botão">9</button>
+                            <button id="btn_divisao" onclick="adicionar('/')"class="botãoo">/</button>
+                            <button id="btn_pa" onclick="adicionar('')"class="botãoo">(</button>
+                            </br></br>
+                            <button id="btn_ponto" onclick="adicionar('.')"class="botãoo">.</button>
+                            <button id="btn_zero" onclick="adicionar('0')"class="botão">0</button>
+                            <button id="btn_virgula" onclick="adicionar(',')"class="botãoo">,</button>
+                            <button id="btn_multiplicacao" onclick="adicionar('*')"class="botãoo">x</button>
+                            <button id="btn_pf" onclick="adicionar('')"class="botãoo">)</button>
+
+                            </br></br>
+                            <button id="btn_limpar" onclick="Limpar()">C</button>
+                            <button id="btn_igual" onclick="calcular()">=</button>                
+                    </fieldset>
+    </body>
+</html> 
